@@ -1,0 +1,128 @@
+@import "reset";
+@import "genral";
+
+body {
+  background-color: #3a4a4f;
+  max-width: 1200px;
+  padding: 1rem 4rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+:root {
+  --primery: #3a4a4f;
+  --secondary: #0195be;
+  ---tricery: #f94340;
+  --text-color: #3a4a4f;
+}
+
+nav {
+  background-color: white;
+  border-top: 3px solid #0195be;
+  padding: 0.4rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+nav ul li a {
+  color: var(--secondary);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+p {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.col a {
+  color: var(---tricery);
+  font-weight: 500;
+}
+
+.container {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.col {
+  text-align: left;
+  padding: 8px 1rem;
+  background-color: white;
+  border-top: 3px solid #0195be;
+}
+
+img {
+  padding: 5%;
+}
+
+.graph img {
+  width: 60%;
+}
+
+.col-1,
+.col-3,
+.col-5,
+.col-6 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.col-2 {
+  grid-column: span 2;
+  grid-row: span 6;
+}
+
+.col-4 {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.col-3,
+.col-5 {
+  padding: 0;
+  margin: 0;
+}
+.col-3 p,
+.col-5 p {
+  padding: 10px;
+}
+
+.col-3 h2,
+.col-5 a {
+  width: 90%;
+  margin: 0;
+  padding: 8px 5%;
+}
+
+.col-5 h2,
+.col-3 span a {
+  color: white;
+  width: 90%;
+  margin: 0;
+  padding: 10px 5%;
+  background-color: var(---tricery);
+  display: inline-block;
+}
+
+.col-5 h2 {
+  background-color: var(--secondary);
+}
